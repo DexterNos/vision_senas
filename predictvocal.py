@@ -45,10 +45,6 @@ while (1):
                 posiciones.append([idx,corx,cory])
                 dibujo.draw_landmarks(frame, mano, clase_manos.HAND_CONNECTIONS)
             if len(posiciones) != 0:
-                #pto_i1 = posiciones[3] #5 Dedos: 4 | 0 Dedos: 3 | 1 Dedo: 2 | 2 Dedos: 3 | 3 Dedos: 4 | 4 Dedos: 8
-                #pto_i2 = posiciones[17]#5 Dedos: 20| 0 Dedos: 17| 1 Dedo: 17| 2 Dedos: 20| 3 Dedos: 20| 4 Dedos: 20
-                #pto_i3 = posiciones[10]#5 Dedos: 12| 0 Dedos: 10 | 1 Dedo: 20|2 Dedos: 16| 3 Dedos: 12| 4 Dedos: 12
-                #pto_i4 = posiciones[0] #5 Dedos: 0 | 0 Dedos: 0 | 1 Dedo: 0 | 2 Dedos: 0 | 3 Dedos: 0 | 4 Dedos: 0
                 pto_i5 = posiciones[9]
                 x1,y1 = (pto_i5[1]-100),(pto_i5[2]-100) #Obtenemos el punto incial y las longitudes
                 ancho, alto = (x1+200),(y1+200)
